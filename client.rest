@@ -1,0 +1,43 @@
+POST http://localhost:8080/register
+Content-Type: application/json
+
+{
+  "username": "OkGoogle2w",
+  "password": "TestMe123w"
+}
+
+###
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+  "username": "OkGoogle",
+  "password": "TestMe123"
+}
+
+###
+POST http://localhost:8080/updatecontent
+Content-Type: application/json
+
+{
+  "credentials": {
+    "username": "OkGoogle",
+    "password": "TestMe123"
+  },
+  "data": "heyya"
+}
+
+###
+POST http://localhost:8080/contentdatalogin
+Content-Type: application/json
+
+{
+  "credentials": {
+    "username": "OkGoogle",
+    "password": "TestMe123"
+  }
+}
+
+###
+GET http://localhost:8080/getcontentdata
+Content-Type: application/json

@@ -1,16 +1,15 @@
-import express from 'express'
 import mongoose from 'mongoose'
 
 const Schema = new mongoose.Schema({
-  userame: {
+  username: {
     type: String,
-    require: true,
+    required: true,
   },
   password: {
     type: String,
-    require: true,
+    required: true,
   }
 })
 
-const authModal = mongoose.model('auth', Schema)
-export default authModal
+const UserModel = mongoose.model('User', Schema)
+export default UserModel
