@@ -45,7 +45,7 @@ app.use('/', registerRouter, loginRouter, changePasswordRouter,
 // * make first time signup possible
 // * authenticate password and username && if true, return data, and give access to modify content
 
-mongoose.connect(process.env.MONGODB, {
+mongoose.connect(process.env.MONGO_URI, {
   useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true
 })
 
