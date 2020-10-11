@@ -17,7 +17,6 @@ import getContentRouter from './routes/getContentRouter'
 
 // ~ implement jwt and disable sessions
 
-
 const app = express()
 const port = process.env.PORT || 8080;
 
