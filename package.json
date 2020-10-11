@@ -24,6 +24,9 @@
     "exec": "npm start",
     "ext": "ts"
   },
+  "engines": {
+    "node": "v12.14.1"
+  },
   "author": "Dennis Aleksandrov",
   "license": "ISC",
   "dependencies": {
