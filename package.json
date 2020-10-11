@@ -4,12 +4,11 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
-    "prestart": "npm run build",
     "start": "ts-node ./src/index.ts",
-    "dev": "nodemon -x ts-node src/index.ts",
-    "start:watch": "nodemon",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "tsc",
+    "watch-node": "nodemon dist/index.js",
+    "watch-ts": "tsc -w",
+    "deploy": "git add . && git commit -m Heroku && git push heroku master"
   },
   "nodemonConfig": {
     "ignore": [
