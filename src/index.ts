@@ -26,7 +26,7 @@ const defaultValues = { title: 'Hey', message: 'Portfolio CMS' }
 app.use(cors())
 app.use(express.json());
 app.use(session({
-  secret: process.env.MONGODB,
+  secret: process.env.MONGO_URI,
   resave: false,
   saveUninitialized: false,
 }))
