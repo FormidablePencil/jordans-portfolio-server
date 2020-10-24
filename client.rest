@@ -44,17 +44,17 @@ Content-Type: application/json
 
 
 ###
-GET https://git.heroku.com/jordan-portfolio-server.git/crystal-parallax
+GET https://jordan-portfolio-server.herokuapp.com/crystal-parallax
 Content-Type: application/json
 
 
 ###
-GET http://localhost:8090/crystal-parallax
+GET http://localhost:8080/crystal-parallax
 Content-Type: application/json
 
 
 ###
-POST http://localhost:8090/crystal-parallax
+POST http://localhost:8080/crystal-parallax
 Content-Type: application/json
 
 {
