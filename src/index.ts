@@ -12,13 +12,15 @@ import '../passportConfig'
 import updateContentRouter from './routes/updateContent'
 import fetchContentDataLoginRouter from './routes/fetchContentDataLoginRouter'
 import getContentRouter from './routes/getContentRouter'
+import postCrystalParallaxRouter from './routes/postCrystalParallaxRouter'
+import getCrystalParallaxRouter from './routes/getCrystalParallaxRouter'
 
 // ! logging in works and lastly, how do we add passport as middleware to check if user has unexpired access token and if expired then refresh if refresh token exists.
 
 // ~ implement jwt and disable sessions
 
 const app = express()
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 8090;
 
 const defaultValues = { title: 'Hey', message: 'Portfolio CMS' }
 
@@ -36,8 +38,16 @@ const LocalStrategy = passportLocal.Strategy;
 
 // ===== Authentication passport strategy
 
-app.use('/', registerRouter, loginRouter, changePasswordRouter,
-  updateContentRouter, fetchContentDataLoginRouter, getContentRouter)
+app.use('/',
+  registerRouter,
+  loginRouter,
+  changePasswordRouter,
+  updateContentRouter,
+  fetchContentDataLoginRouter,
+  getContentRouter,
+  postCrystalParallaxRouter,
+  getCrystalParallaxRouter,
+)
 
 
 // * encrypt password with hash

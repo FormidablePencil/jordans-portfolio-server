@@ -41,3 +41,66 @@ Content-Type: application/json
 ###
 GET http://localhost:8080/getcontentdata
 Content-Type: application/json
+
+
+###
+GET http://localhost:8090/crystal-parallax
+Content-Type: application/json
+
+
+###
+POST http://localhost:8090/crystal-parallax
+Content-Type: application/json
+
+{
+   "credentials": {
+    "username": "JordansHouse",
+    "password": "TestMe123"
+  },
+"rawCrystalData": {
+    "crystalParallaxBg": {
+    "backgroundColor": "#!!Heya",
+    "backgroundImage": "https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v475-katie-101-abstractblackandwhitebg_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=86196a47d14e811c3149f69279f90c1e",
+    "bgImgX": "",
+    "bgImgY": ""
+  },
+  "crystals": [
+    {
+     "mediaQueryWidth": "$$$",
+  "key": 0,
+  "shardIndex": 0,
+  "zIndex": 0,
+  "crystalProps": {
+    "imageProps": {
+      "image": "",
+      "x": 0,
+      "y": 0,
+      "height": 0,
+      "width": 0
+    },
+    "feColorMatrixDx": 0,
+    "feColorMatrixDy": 0,
+    "feColorMatrixStdDeviation": 0,
+    "edgesColor": "", 
+    "middleColor": "",
+    "feColorMatrixBackdropColor":  "0     0     0     0     0 0     0     0     0     0 0     0     0     0     0 0     0     0    .2     0"
+  },
+  "positionInParallaxCanvas": {
+    "transform": {
+      "scale": 0,
+      "translateZ": 0,
+      "rotateY": false,
+      "rotate": ""
+    },
+    "xYPosition": {
+      "top": "",
+      "bottom": "",
+      "left": "",
+      "right": ""
+    }
+  },
+    "mediaQueries": []
+  } 
+  ]
+}
+}
