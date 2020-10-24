@@ -45,8 +45,8 @@ app.use('/',
   updateContentRouter,
   fetchContentDataLoginRouter,
   getContentRouter,
-  // postCrystalParallaxRouter,
-  // getCrystalParallaxRouter,
+  postCrystalParallaxRouter,
+  getCrystalParallaxRouter,
 )
 
 
