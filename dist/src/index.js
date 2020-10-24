@@ -20,7 +20,7 @@ const getContentRouter_1 = __importDefault(require("./routes/getContentRouter"))
 // ! logging in works and lastly, how do we add passport as middleware to check if user has unexpired access token and if expired then refresh if refresh token exists.
 // ~ implement jwt and disable sessions
 const app = express_1.default();
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 8090;
 const defaultValues = { title: 'Hey', message: 'Portfolio CMS' };
 app.use(cors_1.default());
 app.use(express_1.default.json());
