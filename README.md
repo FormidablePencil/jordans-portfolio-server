@@ -9,7 +9,7 @@ parallax-effect-crystals package that I've created you can find here: https://gi
 - React <img src="https://i.ibb.co/nb965ST/react-Logo.png" width="20" title="">
 - Redux <img src="https://i.ibb.co/dbQkwZM/redux.png" width="20" title="">
 - TypeScript <img src="https://i.ibb.co/RBfMh8f/typescript.png" width="20" title="">
-- Sass <img src="https://i.ibb.co/DM6b0gQ/react-spring.png" width="20" title="">
+- Sass <img src="https://i.ibb.co/TYQYRyd/sassLogo.png" width="20" title="">
 - Material-Ui <img src="https://i.ibb.co/VQD5cY6/material-ui.png" width="20" title="">
 - Styled components <img src="https://i.ibb.co/GdtGT3Y/styled-Components.png" width="20" title="">
 
