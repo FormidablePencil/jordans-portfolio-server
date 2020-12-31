@@ -14,6 +14,7 @@ parallax-effect-crystals package that I've created you can find here: https://gi
 - Styled components <img src="https://i.ibb.co/GdtGT3Y/styled-Components.png" width="20" title="">
 
 Client repo code can be found here: https://github.com/FormidablePencil/Jordan-Portfolio/
+
 Client hosted on netlify: https://jordan-portfolio.netlify.app/
 
 ### Server 
@@ -31,4 +32,5 @@ Client hosted on netlify: https://jordan-portfolio.netlify.app/
 - Styled components <img src="https://i.ibb.co/GdtGT3Y/styled-Components.png" width="20" title="">
 
 Cms repo code can be found here: https://github.com/FormidablePencil/cms-jordan-portfolio/
+
 Cms hosted on netlify: https://cms-pf.netlify.app/
