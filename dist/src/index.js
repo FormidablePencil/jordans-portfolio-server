@@ -29,12 +29,14 @@ app.use(express_session_1.default({
 }));
 app.use(passport_1.default.initialize());
 app.use(passport_1.default.session());
-app.use('/', register_1.default, login_1.default, changePassword_1.default, updateContent_1.default, fetchContentDataLoginRouter_1.default, getContentRouter_1.default, postCrystalParallaxRouter_1.default, getCrystalParallaxRouter_1.default);
+app.use("/", register_1.default, login_1.default, changePassword_1.default, updateContent_1.default, fetchContentDataLoginRouter_1.default, getContentRouter_1.default, postCrystalParallaxRouter_1.default, getCrystalParallaxRouter_1.default);
 mongoose_1.default.connect(process.env.MONGO_URI, {
-    useCreateIndex: true, useNewUrlParser: true, useUnifiedTopology: true
+    useCreateIndex: true,
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
 });
 mongoose_1.default.connection
-    .once('open', () => console.log('connection successful'))
-    .on('error', (error) => console.log(error, 'connection successful'));
-app.listen(port, () => console.log('server running', `running on http://localhost:${port}`));
+    .once("open", () => console.log("connection successful"))
+    .on("error", (error) => console.log(error, "connection successful"));
+app.listen(port, () => console.log("server running", `running on http://localhost:${port}`));
 //# sourceMappingURL=index.js.map
