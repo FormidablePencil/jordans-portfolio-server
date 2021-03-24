@@ -1,18 +1,18 @@
-import express from "express";
 import cors from "cors";
-import mongoose from "mongoose";
 import "dotenv/config";
-import registerRouter from "./routes/register";
-import loginRouter from "./routes/login";
-import changePasswordRouter from "./routes/changePassword";
-import passport from "passport";
+import express from "express";
 import session from "express-session";
+import mongoose from "mongoose";
+import passport from "passport";
 import "../passportConfig";
-import updateContentRouter from "./routes/updateContent";
+import changePasswordRouter from "./routes/changePassword";
 import fetchContentDataLoginRouter from "./routes/fetchContentDataLoginRouter";
-import getContentRouter from "./routes/getContentRouter";
-import postCrystalParallaxRouter from "./routes/postCrystalParallaxRouter";
+import getContentRouter, {getContentExampRouter} from "./routes/getContentRouter";
 import getCrystalParallaxRouter from "./routes/getCrystalParallaxRouter";
+import loginRouter from "./routes/login";
+import postCrystalParallaxRouter from "./routes/postCrystalParallaxRouter";
+import registerRouter from "./routes/register";
+import updateContentRouter from "./routes/updateContent";
 
 const app = express();
 const port = process.env.PORT || 8080;
@@ -37,7 +37,8 @@ app.use(
   fetchContentDataLoginRouter,
   getContentRouter,
   postCrystalParallaxRouter,
-  getCrystalParallaxRouter
+  getCrystalParallaxRouter,
+  getContentExampRouter,
 );
 
 mongoose.connect(process.env.MONGO_URI, {

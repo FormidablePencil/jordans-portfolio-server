@@ -1,9 +1,10 @@
-import mongoose from 'mongoose'
+import mongoose from "mongoose";
 
 const Schema = new mongoose.Schema({
   username: String,
-  data: Object
-})
+  data: Object,
+});
 
-const ContentModel = mongoose.model('Content', Schema)
-export default ContentModel
+const ContentModel = mongoose.model("Content", Schema, "contents");
+export default ContentModel;
+
