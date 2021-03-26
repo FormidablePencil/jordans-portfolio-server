@@ -1,7 +1,5 @@
 # Server for cinematographer's portfolio
 
-Cinematographer's portfolio was about 90% complete but was abandoned due to communication complications. It's responsive, has a few large features I built personally some of which is a cms, tabbular-scroll-effect I call it, and a crystal-parallaxing-effect and a cms for it.
-
 parallax-effect-crystals package that I've created you can find here: https://github.com/FormidablePencil/parallax-effect-crystals
 
 ### Client
@@ -15,7 +13,7 @@ parallax-effect-crystals package that I've created you can find here: https://gi
 
 Client repo code can be found here: https://github.com/FormidablePencil/Jordan-Portfolio/
 
-Client hosted on netlify: https://jordan-portfolio.netlify.app/
+Client hosted on netlify: https://ideal-intent.netlify.app/
 
 ### Server 
 
